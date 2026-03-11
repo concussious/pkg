@@ -60,9 +60,33 @@
 .Ao command Ac Ao Ar flags Ac
 .\" ---------------------------------------------------------------------------
 .Sh DESCRIPTION
-.Nm pkg
-provides an interface for manipulating packages: registering,
-adding, removing and upgrading packages.
+The
+.Nm
+utility is a package manager,
+A package manager provides unified management of system software,
+Use
+.Nm
+to
+.Ic search
+for remote software, or manage
+.Ic add No Ns ing ,
+.Ic remove No Ns ing ,
+or
+.Ic upgrade No Ns d ,
+to their latest versions.
+Software obtained through other means can be
+.Ic register No Ns ed,
+into this database.
+.Pp
+.Ic annotate
+notes onto them or
+.Ic lock
+known good versions in place.
+.Pp
+Packages are built using the
+.Xr ports 7
+framework.
+.Pp
 .Nm pkg-static
 is a statically linked variant of
 .Nm
